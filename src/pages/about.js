@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { MyButton } from "./components/Button/MyButton";
+import MyButton from "./components/Button/MyButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <MyButton />
-        <div className={styles.description}>
+        <div>
+          <MyButton />
+        </div>        <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/about.js</code>
